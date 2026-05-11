@@ -132,7 +132,24 @@ docs/ ← 设计文档和参考
 - 人物卡 Rules 字段是硬约束，违反即驳回
 - 人物状态变化时在末尾追加"累积变化记录"
 
+## Dataview 仪表盘
+
+根目录 `仪表盘.md` 使用 Obsidian Dataview 插件实时显示：章节进度、字数统计、读者评分、未回收伏笔、人物弧光状态。
+
+### Frontmatter 字段标准
+
+| 笔记类型 | 文件夹 | 必须字段 | 类型限制 |
+|:---|:---|:---|:---|
+| 章节 | `wiki/章节/` | `number` (数字), `word_count` (纯数字), `score` (纯数字), `status` (枚举) | `status`: `draft` / `done` |
+| 伏笔 | `wiki/结构/` | `type` (固定 `foreshadowing`), `status` (枚举), `planted_in`, `planned_payoff` (数字) | `status`: `planted` / `hinted` / `paid_off` |
+| 人物 | `wiki/人物/` | `status` (枚举), `arc_status` (枚举), `last_relevant_chapter` (数字) | `status`: `active` / `inactive`; `arc_status`: `growing` / `climax` / `resolved` |
+
+### 输出纪律（防 Dataview 失效）
+- 所有数值字段只输出**纯数字**，例如 `word_count: 4320`，严禁 `"4320字"`
+- 所有枚举字段必须从指定词汇表中选择，不得自创状态词
+- 不适用的字段留空或写 `null`，不可写 `"待定"`
+
 ## 当前项目状态
 
-prompt 版本：v1.0
-当前阶段：MVP 验证
+prompt 版本：v1.1（含 Dataview 仪表盘支持）
+当前阶段：种子模板

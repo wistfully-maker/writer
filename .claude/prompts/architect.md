@@ -18,8 +18,10 @@
 ---
 type: character
 id: "{{name}}"
-status: active
+status: active                # 枚举：active / inactive
 importance: protagonist | antagonist | supporting | minor
+arc_status: growing           # 枚举：growing / climax / resolved
+last_relevant_chapter: 1      # 纯数字，最后活跃的章节号
 created_by: Architect
 last_updated: "{{date}}"
 modified_by: Architect
@@ -125,11 +127,94 @@ modified_by: Architect
 3.结束时应该变成什么？
 4.必须释放什么信息？必须隐藏什么信息？
 
+## 章节卡模板（章节化时使用）
+
+```yaml
+---
+type: chapter
+id: "{{n}}"
+number: {{n}}                 # 纯数字
+title: "{{标题}}"
+summary: "{{一句话提要}}"
+word_count: 0                 # 纯数字，章节化时填入
+score: 0                      # 纯数字，读者评分后填入
+status: draft                 # 枚举：draft / done
+created_by: Architect
+last_updated: "{{date}}"
+---
+```
+
+## 伏笔卡模板（嵌入大纲卡或独立文件）
+
+```yaml
+---
+type: foreshadowing           # 固定值
+id: "F{{n}}"
+status: planted               # 枚举：planted / hinted / paid_off
+planted_in: "场景{{n}}"       # 字符串
+planned_payoff: {{n}}         # 纯数字（章节数）
+created_by: Architect
+last_updated: "{{date}}"
+---
+```
+
 ## 伏笔管理规则
 
 创建伏笔时必须规划回收章节
-巡查时检查所有 status=active 的伏笔，评估回收时机
+巡查时检查所有 status 为 `planted` 或 `hinted` 的伏笔，评估回收时机
 回收后的伏笔标记 status: paid_off
+
+## Dataview 格式铁律（仪表盘兼容）
+
+项目使用 Obsidian Dataview 插件做全局仪表盘。为确保仪表盘正确读取，所有笔记的 frontmatter 必须严格遵守以下规则：
+
+### 章节卡（wiki/章节/）
+```yaml
+---
+type: chapter
+id: "1"                    # 字符串
+number: 1                  # 纯数字，无引号
+title: "章节标题"
+summary: "一句话提要"
+word_count: 4320           # 纯数字，无引号，不写"4320字"
+score: 8.5                 # 纯数字，由读者填写，无引号
+status: done               # 枚举：draft / done
+created_by: Architect
+last_updated: "2026-05-11"
+---
+```
+
+### 伏笔卡（wiki/结构/）
+```yaml
+---
+type: foreshadowing         # 固定值
+id: "F1"
+status: planted             # 枚举：planted / hinted / paid_off
+planted_in: "场景1"         # 字符串
+planned_payoff: 5           # 纯数字（章节数）
+created_by: Architect
+last_updated: "2026-05-11"
+---
+```
+
+### 人物卡（wiki/人物/）
+```yaml
+---
+type: character
+id: "陈述"
+status: active              # 枚举：active / inactive
+importance: protagonist
+arc_status: growing         # 枚举：growing / climax / resolved
+last_relevant_chapter: 3    # 纯数字（最后活跃的章节号）
+created_by: Architect
+last_updated: "2026-05-11"
+---
+```
+
+### 通用规则
+- 所有数值字段只输出**纯数字**，例如 `word_count: 4320`，严禁 `"4320字"`
+- 所有枚举字段必须从指定词汇表中选择，不得自创状态词
+- 不适用的字段留空或写 `null`，不可写 `"待定"`
 
 ## 按需探索模式
 

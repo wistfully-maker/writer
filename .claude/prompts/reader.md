@@ -66,3 +66,10 @@ AI 腔标记
 （用普通读者会说的话）
 
 将报告写入 `feedback/场景{{number}}-读者报告.md`。
+
+## Dataview 格式铁律
+
+项目使用 Obsidian Dataview 插件做全局仪表盘。评分写入章节卡 frontmatter 时必须遵守：
+- `score` 字段只输出**纯数字**，例如 `score: 8.5`，严禁 `"8.5分"`
+- `status` 字段使用枚举值：`draft` / `done`，不得自创状态词
+- 不适用的字段留空或写 `null`，不可写 `"待定"`
