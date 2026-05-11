@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "fb237f1b218bbe6b",
+    "type": "split",
+    "children": [
+      {
+        "id": "23db4ebcef0c2f30",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "720f7969d9b578cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/章节/第1章.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "第1章"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7797362eb399c5a6",
+    "type": "split",
+    "children": [
+      {
+        "id": "21b66e6d4d7c36c1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32a44892e0dc546b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "1590853d51eb24a7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "2484d640b0b43b08",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9549a145d448c277",
+    "type": "split",
+    "children": [
+      {
+        "id": "7074200dc98018f5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc345fc90e11c713",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "c415ec9340617332",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "0885a7e688a256d0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "2cd3bcdc1f9c3522",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "8d8bbf43aec529f6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "未命名/未命名.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "未命名 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "720f7969d9b578cd",
+  "lastOpenFiles": [
+    "wiki/章节/第5章.md",
+    "wiki/章节/第4章.md",
+    "wiki/章节/第1章.md",
+    "wiki/章节/第3章.md",
+    "wiki/章节/第2章.md",
+    "wiki/风格/风格指南.md",
+    "wiki/世界观/记忆银行系统.md",
+    "feedback/场景6-读者报告.md",
+    "feedback/场景5-读者报告.md",
+    "feedback/场景3-读者报告.md",
+    "feedback/场景2-读者报告.md",
+    "feedback/场景1-读者报告.md",
+    "docs/design-decisions.md",
+    "feedback/巡查报告-全书.md",
+    "feedback/场景8-读者报告.md",
+    "feedback/场景7-读者报告.md",
+    "feedback/场景4-读者报告.md",
+    "wiki/情节/场景2-怀表里的年轻人.md.tmp.14304.391f574755aa",
+    "wiki/情节/场景1-钟开始倒转.md.tmp.14304.d42ec1dd8e83",
+    "wiki/情节/场景8-从未存在.md",
+    "wiki/情节/场景7-最后一顿早餐.md",
+    "wiki/情节/场景6-最后的坦诚.md",
+    "wiki/情节/场景5-女儿的调查.md",
+    "wiki/情节/场景4-疯狂的记录.md",
+    "wiki/情节/场景3-钟表店.md",
+    "wiki/情节/场景2-怀表里的年轻人.md",
+    "wiki/情节/场景1-钟开始倒转.md",
+    "wiki/结构/大纲卡.md",
+    "manuscript/第02章/场景04.md.tmp.21344.4b6cbc5d966d",
+    "manuscript/第02章/场景07.md.tmp.21344.78de723f7a4f",
+    "manuscript/第02章/场景07.md.tmp.21344.fe7838fe4269",
+    "manuscript/第02章/场景07.md.tmp.21344.99a61b8b84bf",
+    "manuscript/第02章/场景07.md.tmp.21344.fea8e3dac541",
+    "manuscript/第03章/场景09.md.tmp.21344.12e9f9cc8784",
+    "manuscript/第02章/场景07.md.tmp.21344.298753173adb",
+    "feedback/全文-读者报告.md.tmp.21344.b40e5aa926f0"
+  ]
+}
