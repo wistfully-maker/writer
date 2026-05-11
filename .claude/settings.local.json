@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat)",
+      "Bash(sed '1d' manuscript/第01章/场景01.md)",
+      "Bash(echo \"\")",
+      "Bash(sed '1d' manuscript/第01章/场景02.md)",
+      "Bash(sed '1d' manuscript/第01章/场景03.md)",
+      "Bash(sed '1d' manuscript/第02章/场景04.md)",
+      "Bash(sed '1d' manuscript/第02章/场景05.md)",
+      "Bash(sed '1d' manuscript/第02章/场景06.md)",
+      "Bash(sed '1d' manuscript/第02章/场景07.md)",
+      "Bash(sed '1d' manuscript/第03章/场景08.md)",
+      "Bash(sed '1d' manuscript/第03章/场景09.md)",
+      "Bash(sed '1d' manuscript/第03章/场景10.md)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
