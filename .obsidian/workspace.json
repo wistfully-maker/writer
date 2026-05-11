@@ -11,14 +11,10 @@
             "id": "720f7969d9b578cd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "wiki/章节/第1章.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "第1章"
+              "title": "新标签页"
             }
           }
         ]
@@ -183,9 +179,12 @@
   },
   "active": "720f7969d9b578cd",
   "lastOpenFiles": [
+    "CLAUDE.md.tmp.14304.d624d3655bf6",
+    "仪表盘.md",
+    "仪表盘.md.tmp.14304.e84d1e66581b",
+    "wiki/章节/第1章.md",
     "wiki/章节/第5章.md",
     "wiki/章节/第4章.md",
-    "wiki/章节/第1章.md",
     "wiki/章节/第3章.md",
     "wiki/章节/第2章.md",
     "wiki/风格/风格指南.md",
@@ -209,15 +208,12 @@
     "wiki/情节/场景4-疯狂的记录.md",
     "wiki/情节/场景3-钟表店.md",
     "wiki/情节/场景2-怀表里的年轻人.md",
-    "wiki/情节/场景1-钟开始倒转.md",
-    "wiki/结构/大纲卡.md",
     "manuscript/第02章/场景04.md.tmp.21344.4b6cbc5d966d",
     "manuscript/第02章/场景07.md.tmp.21344.78de723f7a4f",
     "manuscript/第02章/场景07.md.tmp.21344.fe7838fe4269",
     "manuscript/第02章/场景07.md.tmp.21344.99a61b8b84bf",
     "manuscript/第02章/场景07.md.tmp.21344.fea8e3dac541",
     "manuscript/第03章/场景09.md.tmp.21344.12e9f9cc8784",
-    "manuscript/第02章/场景07.md.tmp.21344.298753173adb",
-    "feedback/全文-读者报告.md.tmp.21344.b40e5aa926f0"
+    "manuscript/第02章/场景07.md.tmp.21344.298753173adb"
   ]
 }
